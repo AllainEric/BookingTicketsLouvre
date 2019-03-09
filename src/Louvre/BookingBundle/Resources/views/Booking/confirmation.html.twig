@@ -1,0 +1,20 @@
+{# src/Louvre/BookingBundle/Resources/views/Booking/view.html.twig #}
+
+{% extends "::layout.html.twig" %}
+
+{% block title %}Confirmation de votre réservation n°{{ id }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+
+<h1>Affichage du ticket n°{{ id }} !</h1>
+  <div>
+    {# On affiche tous les messages flash dont le nom est « info » #}
+    {% for message in app.session.flashbag.get('info') %}
+      <p>Message flash : {{ message }}</p>
+    {% endfor %}
+  </div>
+
+    <p>Au plaisir de vous acceuillir au Musée du Louvre !</p>
+    <p>N'hésitez pas de consulter nos informations pratiques pour se rendre au Musée du Louvre en <a href="{{ url('informations')}}">cliquant ici</a></p>
+
+{% endblock %}

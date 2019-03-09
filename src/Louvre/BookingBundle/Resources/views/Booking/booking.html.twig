@@ -1,0 +1,23 @@
+{# src/Louvre/BookingBundle/Resources/views/Booking/booking.html.twig #}
+
+{% extends "LouvreBookingBundle::layout.html.twig" %}
+
+{% block title %}Formulaire de réservation de e-ticket pour le Louvre !{% endblock %}
+
+{% block header_image %}
+    <header class="col-lg-12 mx-auto">
+        <div class="col-xs-12" style="height:65px;"></div>
+        <p>
+            <img src="{{ asset('bundles/louvrebooking/images/pyramide_du-louvre.jpg') }}" alt="Musée du Louvre" />
+        </p>
+        <div class="col-xs-12" style="height:20px;"></div>
+    </header>
+{% endblock %}
+
+{% block body %}
+
+    <h1>Réservation du ticket</h1>
+    
+    {{ include("LouvreBookingBundle:Booking:form.html.twig") }}
+
+{% endblock %}

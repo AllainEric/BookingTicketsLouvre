@@ -1,0 +1,70 @@
+{# src/Louvre/BookingBundle/Resources/views/Booking/informations.html.twig #}
+
+{% extends 'LouvreBookingBundle::layout.html.twig' %}
+
+{% block title %}{{ parent() }} - Informations{% endblock %}
+
+{% block header_image %}
+    <header class="col-lg-12 mx-auto">
+        <div class="col-xs-12" style="height:65px;"></div>
+        <p>
+          <img src="{{ asset('bundles/louvrebooking/images/musee_louvre_header.png') }}" alt="Musée du Louvre" />
+        </p>
+        <div class="col-xs-12" style="height:20px;"></div>
+    </header>
+{% endblock %} 
+
+{% block body %}
+<h2 class="text-center"> Informations Pratiques </h2>
+
+    <div class="col-xs-12" style="height:20px;"></div> 
+	<h4><b> Horaires</b></h4>
+        <p> Lundi : 9h - 18h <br/>
+            Mardi : Fermé <br/>
+            Mercredi : 9h - 21h45 <br/>
+            Jeudi : 9h - 18h <br/>
+            Vendredi : 9h -21h45 <br/>
+            Samedi : 9h - 18h <br/>
+            Dimanche : 9h - 18h 
+        </p>
+        <p> L'évacuation des salles débute à 17 h 30 ou 21 h 30 les jours de nocturne. </p>
+
+	<hr>
+
+	<h4><b> Tarifs </b></h4>
+        <p> Enfant de moins de 4 ans : Gratuit <br/>
+            Enfant (4 ans à 11 ans) : 8€ <br/>
+            Adulte (12 ans à 59 ans) : 16€ <br/>
+            Sénior (à partir de 60 ans) : 12€ 
+        </p>
+        <p> Tarif réduit : 10€ (étudiants, chômeurs, employée du musée, militaire,...) sur présentation d'un justificatif.</p>
+
+	 <hr>
+
+	 <h4><b>Accéder au Musée du Louvre</b></h4>
+
+        <div class="col-xs-12" style="height:20px;"></div>    
+
+        <p>Musée du Louvre Rue de Rivoli, 75001 Paris</p>
+
+        <img src="{{ asset('bundles/louvrebooking/images/plan_louvre.png') }}"/></br>
+        <a href="https://www.google.com/maps/place/48%C2%B051'38.2%22N+2%C2%B020'15.5%22E/@48.860611,2.337644,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d48.860611!4d2.337644" class="btn btn-secondary" role="button"target="_blank">Agrandir la carte</a>
+
+        <div class="col-xs-12" style="height:20px;"></div>
+
+        <p> En métro : lignes 1 et 7, station "Palais-Royal / Musée du Louvre" </p>
+
+        <p> En bus : bus n° 21, 24, 27, 39, 48, 68, 69, 72, 81, 95 </p>
+
+        <p> Stations Velib à proximité du musée : <br/>
+            n°1015 : 2 place A. Malraux	<br/>
+            n°1023 : 165 rue Saint-Honoré	<br/>
+            n°1014 : 5 rue de l’Echelle	<br/>
+            n°1013 : 186 rue Saint-Honoré </p>
+
+        <p> En voiture : un parc de stationnement souterrain est accessible par l'avenue du général Lemonier, tous les jours de 7 h 00 à 23 h 00. </p>
+
+        <p> En Batobus : Escale Louvre, quai François Mitterrand </p>
+
+        <div class="col-xs-12" style="height:20px;"></div> 
+{% endblock %}

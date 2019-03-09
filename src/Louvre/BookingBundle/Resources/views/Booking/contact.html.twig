@@ -1,0 +1,63 @@
+{# src/Louvre/BookingBundle/Resources/views/Booking/contact.html.twig #}
+
+{% extends 'LouvreBookingBundle::layout.html.twig' %}
+
+{% block title %}{{ parent() }} - Contact{% endblock %}
+
+{% block header_image %}
+    <header class="col-lg-12 mx-auto">
+        <div class="col-xs-12" style="height:65px;"></div>
+        <p>
+          <img src="{{ asset('bundles/louvrebooking/images/musee_louvre_header.png') }}" alt="Musée du Louvre" />
+        </p>
+        <div class="col-xs-12" style="height:20px;"></div>
+    </header>
+{% endblock %} 
+
+{% block body %}
+    <div class="container">
+        <div><h1>Contactez nous</h1></div>
+            <br />
+            <div class="col-md-6">
+                <form class="my-form">
+                    <div class="form-group">
+                        <label for="form-name">Nom</label>
+                        <input type="email" class="form-control" id="form-name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email</label>
+                        <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Téléphone</label>
+                        <input type="text" class="form-control" id="form-subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea class="form-control" id="form-message" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn-secondary" type="submit">Envoyer</button>  
+                    <div class="col-xs-12" style="height:50px;"></div>               
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .my-form {
+            color: #305896;
+        }
+        .my-form .btn-default {
+            background-color: #305896;
+            color: #fff;
+            border-radius: 0;
+        }
+        .my-form .btn-default:hover {
+            background-color: #4498C6;
+            color: #fff;
+        }
+        .my-form .form-control {
+            border-radius: 0;
+        }
+    </style>
+{% endblock %}

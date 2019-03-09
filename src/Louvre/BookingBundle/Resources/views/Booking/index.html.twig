@@ -1,0 +1,48 @@
+{# src/Louvre/BookingBundle/Resources/views/Booking/index.html.twig #}
+
+{% extends "LouvreBookingBundle::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Index{% endblock %}
+
+{% block header_image %}
+    <header class="col-lg-12 mx-auto">
+        <div class="col-xs-12" style="height:65px;"></div>
+        <p>
+          <img src="{{ asset('bundles/louvrebooking/images/musee_louvre_header.png') }}" alt="Musée du Louvre" />
+        </p>
+        <div class="col-xs-12" style="height:20px;"></div>
+    </header>
+{% endblock %}    
+
+{% block body %}
+
+ <h1>Le Musée du Louvre</h1>
+
+      <p> Le musée du Louvre, inauguré en 1793 sous l'appellation Muséum central des arts de la République dans le palais du Louvre, ancienne résidence royale située au centre de Paris, est aujourd'hui le plus grand musée d'art et d'antiquités au monde. Sa surface d'exposition est de 72 735 m26. </p>
+
+      <p> Fin 2016, ses collections comprenaient 554 731 œuvres, dont 35 000 exposées et 264 486 œuvres graphiques. Celles-ci présentent l'art occidental du Moyen Âge à 1848, celui des civilisations antiques qui l'ont précédé et influencé (orientales, égyptienne, grecque, étrusque et romaine), les arts des premiers chrétiens et de l'Islam. </p>
+
+      <div class="col-xs-12" style="height:20px;"></div>
+      
+      <p>
+         <div class="text-center">  
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/U-DOGB4iVBM?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>                    
+      </p>
+
+      <div class="col-xs-12" style="height:20px;"></div>
+
+      <p> Situé dans le 1er arrondissement de Paris, sur la rive droite entre la Seine et la rue de Rivoli, le musée se signale par la pyramide de verre de son hall d'accueil, érigée en 1989 dans la cour Napoléon et qui en est devenue emblématique, tandis que la statue équestre de Louis XIV constitue le point de départ de l'axe historique parisien. </p>
+
+      <p> En 2017, avec environ 8,1 millions de visiteurs annuels, le Louvre est le musée le plus visité au monde. Il est le site culturel payant le plus visité de France. Parmi ses pièces les plus célèbres figurent La Joconde, la Vénus de Milo, Le Scribe accroupi, La Victoire de Samothrace et le Code de Hammurabi. </p>
+
+      <p> Le Louvre possède une longue histoire de conservation artistique et historique, depuis l'Ancien Régime jusqu'à nos jours. À la suite du départ de Louis XIV pour le château de Versailles à la fin du xviie siècle, on y entrepose une partie des collections royales de tableaux et de sculptures antiques. Après avoir durant un siècle hébergé plusieurs académies dont celle de peinture et de sculpture, ainsi que divers artistes logés par le roi, l'ancien palais royal est véritablement transformé sous la Révolution en « Muséum central des arts de la République ».</p>
+       
+      <p> Il ouvre en 1793 en exposant environ 660 œuvres, essentiellement issues des collections royales ou confisquées chez des nobles émigrés ou dans des églises. Par la suite les collections ne cesseront de s'enrichir par des prises de guerre, acquisitions, mécénats, legs, donations, et découvertes archéologiques. </p> <br/>
+
+      <div class="text-center" >
+            <a  href="{{ path('louvre_booking_booking') }}" class="btn btn-lg btn-danger" role="button">Réserver</a></br>
+      </div>
+      <div class="col-xs-12" style="height:50px;"></div>
+
+{% endblock %}

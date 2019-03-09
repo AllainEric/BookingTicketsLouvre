@@ -1,0 +1,13 @@
+{# src/Louvre/BookingBundle/Resources/views/Booking/add.html.twig #}
+
+{% extends "::layout.html.twig" %}
+
+{% block title %}Formulaire enregistrement ticket pour le Louvre !{% endblock %}
+
+{% block body %}
+
+    <h1>Création du ticket N°{{ id }}</h1>
+   
+    {{ include(LouvreBookingBundle:Booking:form.html.twig) }}
+
+{% endblock %}
